@@ -4,6 +4,7 @@
   with_items:
   - php5
   - php5-common
+  - php5-curl
   - php5-dev
   - php5-gd
   - php5-json
