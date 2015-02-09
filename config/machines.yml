@@ -1,0 +1,24 @@
+---
+machines:
+  tp_web:
+    hostname: "tp_web"
+    ipv4: "192.168.61.10"
+    playbook: "provisioning/ansible/web_server.yml"
+    port_map:
+    - { guest: 80, host: 80 }
+    - { guest: 443, host: 443 }
+    folder_map:
+    - guest: "/opt/www"
+      host: "../../byng_systems@bitbucket.org/the-pool/"
+      owner: www-data
+      group: www-data
+
+  tp_db:
+    hostname: "tp_db"
+    ipv4: "192.168.61.20"
+    playbook: "provisioning/ansible/db_server.yml"
+
+  tp_cache:
+    hostname: "tp_cache"
+    ipv4: "192.168.61.30"
+    playbook: "provisioning/ansible/cache_server.yml"
