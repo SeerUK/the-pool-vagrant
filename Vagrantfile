@@ -46,7 +46,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         ansible.playbook = machine['playbook']
         # ansible.verbose = 'vvvv'
       end
-
     end
 
     if Vagrant.has_plugin?("vagrant-gatling-rsync")
