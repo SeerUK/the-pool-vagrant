@@ -14,3 +14,13 @@ machines:
     hostname: "tp_db"
     ipv4: "192.168.61.20"
     playbook: "provisioning/ansible/db_server.yml"
+
+  tp_cache:
+    hostname: "tp_cache"
+    ipv4: "192.168.61.30"
+    playbook: "provisioning/ansible/cache_server.yml"
+
+  tp_cache2:
+    hostname: "tp_cache2"
+    ipv4: "192.168.61.31"
+    playbook: "provisioning/ansible/cache_server.yml"
