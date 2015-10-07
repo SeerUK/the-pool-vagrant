@@ -9,6 +9,11 @@ machines:
       host: "../../byng_systems@bitbucket.org/the-pool/"
       owner: www-data
       group: www-data
+    port_map:
+    - guest: 443
+      host: 4443
+    - guest: 80
+      host: 8080
 
   tp_db:
     hostname: "tp_db"
