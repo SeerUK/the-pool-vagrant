@@ -6,7 +6,7 @@ machines:
     playbook: "provisioning/ansible/web_server.yml"
     folder_map:
     - guest: "/opt/www"
-      host: "/Volumes/SMASNUG/git/projects/byng_systems@bitbucket.org/the-pool/"
+      host: "/Volumes/SNADISK/git/projects/byng_systems@bitbucket.org/the-pool/"
       owner: www-data
       group: www-data
     port_map:
